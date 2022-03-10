@@ -26,14 +26,3 @@ for index, image in enumerate(images):
             file.write(image_bytes)
             print(f"Downloading image {index+1}.{image_extension}")
 
-
-
-'''from urllib.request import urlopen
-from bs4 import BeautifulSoup
-import re
-
-html = urlopen('https://nutrabay.com/')
-bs = BeautifulSoup(html, 'html.parser')
-images = bs.find_all('img', {'src':re.compile('.jpg')})
-for image in images: 
-    print(image['src']+'\n')'''
